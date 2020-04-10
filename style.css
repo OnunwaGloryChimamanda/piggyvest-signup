@@ -1,0 +1,107 @@
+.sidenav{ 
+    height: 100%;/*full-height*/
+    width: 0;/*change this in js*/
+    position: fixed;/*stay in place*/
+    z-index: 1;/*stay on top*/
+    top: 0;/*stay at the top*/
+    left: 0;
+    background-color:blue;
+    overflow-x:hidden;/*disable horizontal scroll*/
+    padding-top: 60px;
+    transition: 0.5s;/*time transition effect to slide in the navbar*/
+   }
+   /*the sidenav menu links*/
+   .sidenav a {
+       padding: 8px 8px 8px 32px;
+       text-decoration: none;
+       font-size: 25px;
+       color: white;
+       display: block;
+       transition: 0.3s;
+   }
+   /*when you mouse over the navlinks, their colors change*/
+   .sidenav a:hover {color: gray;
+}
+
+/*position and style of the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*style page content- this is to push page content to the right
+ when sidenav is opened*/
+ #main{
+     transition: margin-left  .5s;
+     padding: 20px
+ }
+
+ /*on smaller screens, where height is less than 450px, change the style of the sidenav
+ (less padding and a smaller font size)*/
+ @media screen and (max-height: 450px) {
+     .sidenav {padding-top: 15px;}
+     .sidenav a {font-size: 18px;}
+ }
+
+ span {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.nav {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    background: white;
+    position: relative;
+    padding: 10px 
+}
+
+.nav::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /*hide shadow behind*/
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
+
+* {box-sizing: border-box}
+.container {
+    padding: 16px
+}
+
+input[type=text] , input[type=password], input[type=email], input[list=how] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: outset;
+
+}
+
+a {color: dodgerblue}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.bg {background-color: #ADD8E6} 

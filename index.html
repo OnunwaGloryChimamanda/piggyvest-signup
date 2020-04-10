@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>piggyvest</title>
+    </head>
+    <body>
+        
+<div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" 
+    class="closebtn"
+    onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Stories</a>
+    <a href="#">FAQ</a>
+    <a href="#">Blog</a>
+    <a href="#">Log In</a>
+    <a href="#">Create a Free Account</a>
+</div>
+<div class="nav">
+<h2 style="color:darkblue; font-family: georgia; "><img src="IMG_20200405_122248_846.jpg" height="25px"><b>piggyvest</b> </h2>
+
+<span style="font: size 30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+</div>
+<div class="bg">
+<div id="main"></div>
+ <hr style="width:500px; color: darkblue;margin-top: 60px" ><br>
+ <h7 style="color:gray; margin-left: 350px;">Sign Up</h7>
+ <h7 style="color:darkgray; margin-left: 135px;">Set Withdrawal Bank</h7>
+ <h7 style="color:darkgray; margin-left: 150px;">Activate</h7><br>
+ <h2 style="color:darkblue; margin-top:50px; text-align: center; font-family: georgia"><b>Create a Secure Account</b></h2>
+ <p><h7 style="color:gray; margin-left: 460px; margin-top: 5px">Welcome to the future of Savings & Investments</h7></p>
+ <form action="action_page.php">
+ <div class="container">
+     <label for="name">First & Last Name(Should Match Your Bank)</label>
+     <input type="text" placeholder="" name="user_name" required>
+
+     <label for="email">Valid Email</label>
+     <input type="email" placeholder="" name="user_email" required>
+
+     <label for="pnumber">Phone Number</label>
+     <input type="text" placeholder="" name="user_number" required>
+
+     <label for="psswd">Create A Password</label>
+     <input type="password" placeholder="" name="user_psswd" required>
+
+     <label for="referral">Refferer Phone or Promo Code (optional)</label>
+     <input type="text" placeholder="Refferer Phone or Code" name="user_refferal" >
+
+     <label for="how">How Did You Hear About Us (optional)</label>
+     <input list="how" placeholder="Click To Select" name="user_how" >
+     <datalist id="how">
+         <option value="Click to select">
+                <option value="Facebook">
+                        <option value="Twitter">
+                                <option value="Instagram">
+                                        <option value="Friend/Family/Coworker Refferal">
+                                            <option value="Google Search">
+                                                    <option value="Google Playstore">
+                                                            <option value="Online Blog">
+                                                                    <option value="Local Newspaper">
+                                                                            <option value="At an Event">
+                                                                                    <option value="Other">
+     </datalist>
+
+     <button type="button" style="background-color:blue" onclick="alert('successful!')"><b style="color:white">
+         Create Account</b></button>
+     
+ </div>
+
+
+ <div class="container signin">
+ <h6>Already have an account? <a href="#">Login</a></h6>
+ <p>By continuing, I agree to Piggyvest's <a href="#">Terms of Use & Privacy.</a></p>
+</div>
+</form>
+</div>
+    </body>
+    <!--the js slides the sidenav, and makes it 100% wide i.e it covers the whole page -->
+    <script>
+    function openNav () {
+        document.getElementById("mySidenav").style.
+        width = "100%";
+    }
+    /*set the width of the sidenav to 0 i.e it closes or hides it*/
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</html>
